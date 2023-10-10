@@ -1,0 +1,14 @@
+# r11-user 11 RWDC.230905.003 10681216 release-keys
+- manufacturer: google
+- platform: exynos5
+- codename: r11
+- flavor: r11-user
+- release: 11
+- id: RWDC.230905.003
+- incremental: 10681216
+- tags: release-keys
+- fingerprint: google/r11/r11:11/RWDC.230905.003/10681216:user/release-keys
+- is_ab: false
+- brand: google
+- branch: r11-user-11-RWDC.230905.003-10681216-release-keys
+- repo: google_r11_dump
