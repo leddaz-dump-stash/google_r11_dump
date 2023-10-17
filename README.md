@@ -1,0 +1,14 @@
+# r11-user 13 TWD4.231005.002 10752801 release-keys
+- manufacturer: google
+- platform: exynos5
+- codename: r11
+- flavor: r11-user
+- release: 13
+- id: TWD4.231005.002
+- incremental: 10752801
+- tags: release-keys
+- fingerprint: google/r11/r11:13/TWD4.231005.002/10752801:user/release-keys
+- is_ab: false
+- brand: google
+- branch: r11-user-13-TWD4.231005.002-10752801-release-keys
+- repo: google_r11_dump
