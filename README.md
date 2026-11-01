@@ -1,0 +1,14 @@
+# r11-user 15 BW1A.251005.003.W1 14124465 release-keys
+- manufacturer: google
+- platform: exynos5
+- codename: r11
+- flavor: r11-user
+- release: 15
+- id: BW1A.251005.003.W1
+- incremental: 14124465
+- tags: release-keys
+- fingerprint: google/r11/r11:15/BW1A.251005.003.W1/14124465:user/release-keys
+- is_ab: false
+- brand: google
+- branch: r11-user-15-BW1A.251005.003.W1-14124465-release-keys
+- repo: google_r11_dump
