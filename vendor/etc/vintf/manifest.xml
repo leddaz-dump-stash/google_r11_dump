@@ -1,0 +1,141 @@
+<!--
+    Input:
+        device/google/r11/manifest.xml
+        vendor/samsung_slsi/telephony/s5400/common/device/samsung/manifests/1.5/manifest_radio_ss.xml
+        vendor/samsung_slsi/telephony/s5400/common/device/samsung/manifests/manifest_radioconfig.xml
+        vendor/samsung_slsi/telephony/s5400/common/device/samsung/manifests/oem/hidl/manifest_radio_external.xml
+        vendor/samsung_slsi/telephony/s5400/common/device/samsung/manifests/secureelement/1.2/manifest.xml
+-->
+<manifest version="9.0" type="device" target-level="5">
+    <hal format="hidl">
+        <name>android.hardware.audio</name>
+        <transport>hwbinder</transport>
+        <fqname>@6.0::IDevicesFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.audio.effect</name>
+        <transport>hwbinder</transport>
+        <fqname>@6.0::IEffectsFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.bluetooth</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IBluetoothHci/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.bluetooth.audio</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::IBluetoothAudioProvidersFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.dumpstate</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IDumpstateDevice/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.gatekeeper</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IGatekeeper/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.graphics.allocator</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::IAllocator/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.graphics.composer</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.3::IComposer/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.graphics.mapper</name>
+        <transport arch="32+64">passthrough</transport>
+        <fqname>@2.1::IMapper/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.keymaster</name>
+        <transport>hwbinder</transport>
+        <fqname>@4.0::IKeymasterDevice/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.media.omx</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IOmx/default</fqname>
+        <fqname>@1.0::IOmxStore/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.memtrack</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IMemtrack/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.nfc</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::INfc/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.power.stats</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IPowerStats/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.radio</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::ISap/slot1</fqname>
+        <fqname>@1.5::IRadio/slot1</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.radio.config</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IRadioConfig/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.secure_element</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::ISecureElement/eSE1</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.secure_element</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::ISecureElement/SIM1</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.sensors</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ISensors/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>hardware.google.bluetooth.bt_channel_avoidance</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IBTChannelAvoidance/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>hardware.google.bluetooth.sar</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::IBluetoothSar/default</fqname>
+    </hal>
+    <hal format="aidl">
+        <name>vendor.google_clockwork.displayoffload3</name>
+        <fqname>IDisplayOffloadExperimental/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.google_clockwork.wristorientation</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IWristOrientation/default</fqname>
+        <fqname>@1.0::IWristOrientationCallback/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung_slsi.hardware.ExynosHWCServiceTW</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IExynosHWCServiceTW/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.samsung_slsi.telephony.hardware.radioExternal</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IOemSlsiRadioExternal/rilExternal</fqname>
+    </hal>
+    <sepolicy>
+        <version>202404</version>
+    </sepolicy>
+    <kernel target-level="5"/>
+</manifest>
